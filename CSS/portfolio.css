@@ -267,3 +267,99 @@ section {
 .btn:hover{
     transform: scale(1.2);
 }
+
+h4 {
+    margin-top: 10vh;
+    margin-bottom: -10%;
+    font-size: 35px;
+    color: #4e54c8;
+    letter-spacing: .2rem;
+    font-family: 'Exo', sans-serif;
+    font-weight: bold;
+}
+
+.container2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    color: #fff;
+    font-family: 'Exo', sans-serif;
+}
+
+.card2 {
+    margin-top: 10vh;
+    background-image: linear-gradient(#4e54c8, #060d15);
+    overflow: hidden;
+    border-radius: 20px;
+    min-width: 100vh;
+    max-width: 200vh;
+    max-height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all .7s;
+    box-shadow: rgb(0, 0, 0, 0.35) 0px 5px 15px; 
+}
+
+.card2 .img2 {
+    background-position: center;
+    background-size: cover;
+    width: 150px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: .7;
+    transition: all .10s;
+    z-index: 2;
+}
+
+.card2:hover {
+    background-image: linear-gradient(#060d15, #4e54c8);
+}
+
+.card2:hover .img2 {
+    opacity: 1;
+    width: 200px;
+}
+
+.card2 .content {
+    padding: 0 20px;
+    overflow: hidden;
+    height: 0;
+    transition: all .5s;
+    transform: translateY(30px);
+}
+
+.card2:hover .content {
+    padding: 20px;
+    height: 180px;
+    transform: translateY(0);
+}
+
+.card2 .content .title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.card2 .content .desc {
+    font-size: 14px;
+    font-weight: 100;
+    opacity: .7;
+}
+
+.card2 .arrow {
+    padding: 15px;
+    font-size: 28px;
+    transform: rotate(-180deg);
+    transition: all .5s;
+}
+
+.card2:hover .arrow {
+    transform: rotate(0);
+}
+
